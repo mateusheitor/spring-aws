@@ -1,5 +1,5 @@
-<html>
-
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
 <head>
 
 	<title>MyCodeBlog</title>
@@ -26,10 +26,11 @@
 		</nav>
 		
 		
-		<div class="card shadow-sm bg-white rounded" style="margim-top: 20px;" >
+		<div class="card shadow-sm bg-white rounded" style="margim-top: 20px;" th:each="post : ${posts}">
   			<div class="card-body">
    				 <p class="card-subtitle mb-2 text-muted" style="font-size: 0.8rem;">
-   				 teste1
+   				 	<span th:text="${post.autor}"></span>
+   				 	<span th:text="${post.data}"></span>
    				 </p>
 
 				<a><h4 class="card-title" style="font-weidth: bold; color: black; padding-top: 5px;">teste2</h4></a>
