@@ -33,9 +33,9 @@
    				 	<span th:text="${post.data}"></span>
    				 </p>
 
-				<a><h4 class="card-title" style="font-weidth: bold; color: black; padding-top: 5px;">teste2</h4></a>
+				<a href="#"><h4 class="card-title" style="font-weidth: bold; color: black; padding-top: 5px;"><span th:text="${post.titulo}"></span></h4></a>
    				 
-   				 <p class="card-text">teste3</p>
+   				 <p class="card-text"><span th:utext="${#strings.abbreviate(post.texto,400)}"></span></p>
    				 
 		  	</div>
 		</div>
